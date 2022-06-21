@@ -1,0 +1,9 @@
+.paragraph__atom {
+  font-size: 18px;
+}
+
+@media (min-width: 875px) {
+  .paragraph__atom {
+    font-size: 20px;
+  }
+}
