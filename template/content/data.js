@@ -65,6 +65,20 @@ const data = [
           subHeader: "Find our <a class='link' href='/'>hours</a> below."
         },
       },
+      testimonials: [
+        {
+          review: "Use this space to showcase great reviews from your customers. Use this space to showcase great reviews from your customers.",
+          name: "Jill"
+        },
+        {
+          review: "Reviews increase your businesses conversion through building your reputation.",
+          name: "Max"
+        },
+        {
+          review: "One more review.",
+          name: "Bill"
+        }
+      ],
       parallaxBanner: {
         image: {
           url: "https://images.unsplash.com/photo-1462143338528-eca9936a4d09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",

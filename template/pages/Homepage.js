@@ -20,6 +20,7 @@ import {
   ContactMapSection,
   ContactSection
 } from '../components/sections/contact'
+import { Testimonials } from '../components/sections/testimonials'
 import SectionHeader from '../components/molecules/SectionHeader'
 import ContentHeader from '../components/molecules/ContentHeader'
 import ExpandText from '../components/molecules/ExpandText'
@@ -66,8 +67,9 @@ export default function Homepage() {
         <EmailUs /> */}
         {/* <ContactList /> */}
         {/* <ContactMapSection /> */}
-        <FAQS />
+        <Testimonials />
         <ContactSection />
+        <FAQS />
         {/* <ParallaxBanner /> */}
         {/* <Footer /> */}
       </div>

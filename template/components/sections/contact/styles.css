@@ -1,9 +1,9 @@
-.contact-section {
+#contact-section {
   width: 100%;
   padding: 0;
 }
 
-.contact-section .flex__atom {
+#contact-section .flex__atom {
   flex-wrap: wrap;
 }
 
@@ -147,7 +147,7 @@
 }
 
 @media (min-width: 1362px) {
-  .contact-section .flex__atom {
+  #contact-section .flex__atom {
     flex-wrap: nowrap;
   }
 

@@ -3,7 +3,7 @@ import { BsChatLeftText } from "react-icons/bs"; //text
 import { FiPhoneCall } from "react-icons/fi"; //call
 import { FaRegPaperPlane } from "react-icons/fa"; //email
 import { MdLocationPin } from "react-icons/md"; //location
-import { FaRegClock } from "react-icons/fa"; //email
+import { FaRegClock } from "react-icons/fa"; //hours
 //Icon Styles
 import { IconContext } from "react-icons";
 // Components
@@ -156,7 +156,9 @@ export const ContactSection = () => {
 
   return (
     <>
-      <Section className="contact-section">
+      <Section 
+        id="contact-section" 
+      >
         <ContactMapSection />
       </Section>
     </>
