@@ -1,12 +1,12 @@
 #testimonial-section {
-  margin: 3em;
+  margin: 1em;
 }
 
 /* Swiper */
 #testimonial-section .swiper {
-  width: 90%;
-  max-width: 1700px;
-  height: 300px;
+  max-width: 1400px;
+  height: fit-content;
+  padding: 2.5em 0;
 }
 
 #testimonial-section .swiper-slide {
@@ -30,31 +30,71 @@
   align-items: center;
 }
 
+/* Hide Swiper Buttons on Mobile */
+#testimonial-section .swiper-button-next, 
+#testimonial-section .swiper-button-prev {
+  display: none;
+}
+
 #testimonial-section .swiper-slide .review {
-  max-width: 85%;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 #testimonial-section .swiper-slide .review-name {
   color: rgba(41, 41, 41, 0.3);
   font-weight: 500;
-  margin-top: 1em;;
+  margin-top: 1em;
 }
 /* OpenQuote Icons */
 #testimonial-section .review svg:first-child {
   display: inline;
-  transform:translateY(-12px);
+  transform:translateY(-8px);
   color: rgba(41, 41, 41, 0.9);
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 0.3em;
 }
 
 #testimonial-section .review svg:nth-child(2) {
   display: inline;
-  transform:translateY(-12px);
+  transform:translateY(-8px);
   color: rgba(41, 41, 41, 0.9);
+  width: 16px;
+  height: 16px;
+  margin-left: 0.3em;
+}
+
+/* Desktop  */
+@media (min-width: 875px) {
+  #testimonial-section {
+    margin: 3em;
+  }
+
+  #testimonial-section .swiper {
+    width: 90%;
+    padding: 5em;
+  }
+
+  #testimonial-section .swiper-button-next, 
+  #testimonial-section .swiper-button-prev {
+    display: block;
+  }
+
+  #testimonial-section .swiper-slide .review {
+    max-width: 85%;
+    font-size: 28px;
+  }
+
+  /* OpenQuote Icons */
+#testimonial-section .review svg:first-child {
+  transform:translateY(-12px);
   width: 20px;
   height: 20px;
-  margin-left: 0.3em;
+}
+
+#testimonial-section .review svg:nth-child(2) {
+  transform:translateY(-12px);
+  width: 20px;
+  height: 20px;
+}
 }

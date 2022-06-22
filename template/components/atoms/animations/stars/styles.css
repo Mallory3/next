@@ -1,10 +1,12 @@
 .review-stars {
   display: flex;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 .review-stars svg {
-  height: 2.5em;
-  width: 2.5em;
+  height: 2em;
+  width: 2em;
   color: rgb(255, 217, 0);
   margin: 0.2em;
   animation: 2s stars ease-in infinite;
@@ -23,11 +25,19 @@
  }
  @keyframes stars {
   15% {
-    /* transform: translateY(-35%); */
     opacity: 0.5;
 }
   30% {
-    /* transform: translateY(0%); */
     opacity: 1;
   }
  }
+
+ /* Desktop Styles */
+
+@media (min-width: 875px) {
+  .review-stars svg {
+    height: 2.5em;
+    width: 2.5em;
+  }
+}
+

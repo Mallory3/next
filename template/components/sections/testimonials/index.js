@@ -28,7 +28,6 @@ export const Testimonials = () => {
       className="container"
     >
       <Header title="What our clients say." />
-      <Stars />
       <Swiper
         cssMode={true}
         navigation={true}
@@ -57,6 +56,8 @@ export const Testimonials = () => {
           );
         })}
       </Swiper>
+      <Stars />
+
     </Section>
   );
 }
