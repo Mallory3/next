@@ -26,7 +26,7 @@ const ExpandableText = ({ content, charLimit }) => {
         {content}&nbsp;
         <Button 
           label="Read less"
-          type="readMore"
+          className="readMore"
           onClick={hideText}
         > 
           &nbsp;<IoIosArrowUp />
@@ -39,7 +39,7 @@ const ExpandableText = ({ content, charLimit }) => {
         {text}&nbsp;
         <Button 
           label="...Read more"
-          type="readMore"
+          className="readMore"
           onClick={showText}
         >
           &nbsp;<IoIosArrowDown />

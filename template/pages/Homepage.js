@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import MobileNav from '../components/mobileNav/MobileNav'
-import Header from '../components/atoms/header'
-import HeaderSub from '../components/atoms/headerSub'
-import HeaderSection from '../components/atoms/headerSection'
+import MobileNav from '../components/templates/nav/mobileNav'
+import Header from '../components/atoms/headers/header'
+import HeaderSub from '../components/atoms/headers/headerSub'
+import HeaderSection from '../components/atoms/headers/headerSection'
 import Paragraph from '../components/atoms/paragraph'
 import Button from '../components/atoms/button'
 import Map from '../components/atoms/map'
-import {FAQS} from '../components/molecules/faqs'
+import {FAQS} from '../components/modals/faqs'
 
 import { 
   Email, 
@@ -19,11 +19,11 @@ import {
   ContactList,
   ContactMapSection,
   ContactSection
-} from '../components/atoms/contact'
+} from '../components/sections/contact'
 import SectionHeader from '../components/molecules/SectionHeader'
 import ContentHeader from '../components/molecules/ContentHeader'
 import ExpandText from '../components/molecules/ExpandText'
-import { ParallaxBanner } from '../components/templates/parallaxBanner'
+import { ParallaxBanner } from '../components/sections/parallaxBanner'
 import Footer from '../components/templates/footer'
 
 
@@ -49,27 +49,27 @@ export default function Homepage() {
         {/* <Header title="Header" /> */}
         {/* <HeaderSub title="Sub Header" /> */}
         {/* <HeaderSection title="--CHECK OUT OUR" /> */}
-        <Button label="primary" type="primary"> <FaArrowRight /></Button>
-        <Button label="secondary" type="secondary"> <FaArrowRight /></Button>
-        <Button label="underline" type="underline"> <FaArrowRight /></Button>
+        {/* <Button label="primary" className="primary"> <FaArrowRight /></Button>
+        <Button label="secondary" className="secondary"> <FaArrowRight /></Button>
+        <Button label="underline" className="underline"> <FaArrowRight /></Button> */}
 
         {/* Moleules */}
-        <SectionHeader header="Header" sectionHeader={sectionHeader} />
+        {/* <SectionHeader header="Header" sectionHeader={sectionHeader} />
         <ContentHeader header="Header" subHeader="Sub Header" />
         <Paragraph>I am a paragraph</Paragraph>
         <ExpandText 
           content="I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text. I am expandable text." 
-          />
+          /> */}
         {/* <Map src={mapEmbedded} /> */}
         {/* <PhoneUs />
         <TextUs />
         <EmailUs /> */}
         {/* <ContactList /> */}
         {/* <ContactMapSection /> */}
+        <FAQS />
         <ContactSection />
         {/* <ParallaxBanner /> */}
-        <Footer />
-        <FAQS />
+        {/* <Footer /> */}
       </div>
     </>
   )

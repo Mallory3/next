@@ -1,5 +1,5 @@
-import Header from '../atoms/header'
-import HeaderSection from '../atoms/headerSection'
+import Header from '../atoms/headers/header'
+import HeaderSection from '../atoms/headers/headerSection'
 
 
 const SectionHeader = ({ sectionHeader, header }) => {

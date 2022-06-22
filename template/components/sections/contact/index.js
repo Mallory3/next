@@ -3,12 +3,14 @@ import { BsChatLeftText } from "react-icons/bs"; //text
 import { FiPhoneCall } from "react-icons/fi"; //call
 import { FaRegPaperPlane } from "react-icons/fa"; //email
 import { MdLocationPin } from "react-icons/md"; //location
+import { FaRegClock } from "react-icons/fa"; //email
 //Icon Styles
 import { IconContext } from "react-icons";
 // Components
-import { SubmitButton } from '../form'
-import Flex from '../flex'
-import Map from '../map'
+import { QuestionsForm } from '../../forms/questions'
+import Button from '../../atoms/button'
+import Flex from '../../atoms/flex'
+import Map from '../../atoms/map'
 import Section from '../../atoms/section'
 import ContentHeader from '../../molecules/ContentHeader'
 //Get content data
@@ -30,14 +32,6 @@ export const Text = () => {
 
 export const Email = () => {
   return <span>{ email }</span>;
-}
-
-export const Location = () => {
-  const street = content?.contact?.address?.street
-  const city = content?.contact?.address?.city
-  const postal = content?.contact?.address?.postal
-
-  return <span>{ street }, { city }&nbsp;{ postal }</span>;
 }
 
 export const PhoneUs = () => {
@@ -77,18 +71,27 @@ export const EmailUs = () => {
 }
 
 export const LocateUs = () => {
+  const number = content?.contact?.address?.number
+  const street = content?.contact?.address?.street
+  const city = content?.contact?.address?.city
+  const postal = content?.contact?.address?.postal
   const mapUrl = content?.contact?.map.url
 
   return (
     <Flex>
-      <a href={mapUrl}>
-        <IconContext.Provider value={{ className: "contact-icon location-icon" }}>
-          <div>
-            <MdLocationPin />
-          </div>
-        </IconContext.Provider>
-      </a>
-      <Location />
+        <a href={mapUrl}>
+          <IconContext.Provider value={{ className: "contact-icon location-icon" }}>
+            <div>
+              <MdLocationPin />
+            </div>
+          </IconContext.Provider>
+        </a>
+        <span>
+          {number !== '' ? `${number} ` : null}
+          {street !== '' ? `${ street } ` : null}
+          {city !== '' ? `${ city } ` : null}
+          {postal !== '' ? `${ postal }` : null}
+        </span>
     </Flex>
   );
 }
@@ -132,16 +135,13 @@ export const ContactMapSection = () => {
       <div className="contact-item phone-item">
         <ContentHeader header={firstCardheader} subHeader={firstCardSubHeader} />
         <ContactList />
+        <Button className="secondary" label="Hours">
+          <FaRegClock />
+        </Button>
       </div>
       <div className="contact-item email-item">
         <ContentHeader header={secondCardheader} subHeader={secondCardSubHeader} />
-        <form>
-          <label htmlFor="email">Your Email</label>
-          <input name="email" />
-          <label htmlFor="message">Message</label>
-          <input name="message" />
-          <SubmitButton />
-        </form>
+        <QuestionsForm />
       </div>
       <div className="contact-item map-item">
         <ContentHeader header={thirdCardheader} />

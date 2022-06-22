@@ -1,7 +1,7 @@
 import Accordion from '../../atoms/accordion'
-import Header from '../../atoms/header'
-import HeaderSub from '../../atoms/headerSub'
-import Typing from '../../atoms/typing'
+import Header from '../../atoms/headers/header'
+import HeaderSub from '../../atoms/headers/headerSub'
+import Typing from '../../atoms/animations/typing'
 import Button from '../../atoms/button'
 import Paragraph from '../../atoms/paragraph'
 
@@ -44,7 +44,7 @@ export const FAQS = () => {
       <div className="faq-contact">
         <Paragraph content="Still have questions?" />
         <Button 
-          type="underline"
+          className="underline"
           label="Contact Us"
         >
           &nbsp;<FaArrowRight />

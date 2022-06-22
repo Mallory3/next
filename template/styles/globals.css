@@ -14,8 +14,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-/* Global Styles */
-.content-header {
-  margin-bottom: 2em;
-}

@@ -1,7 +1,7 @@
-const Button = ({ label, type = 'primary', onClick, children }) => {
+const Button = ({ label, className = 'primary', onClick, children }) => {
   return (
     <button
-      className={`button ${type}`}
+      className={`button ${className}`}
       type="button"
       onClick={onClick}
     >

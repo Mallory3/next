@@ -7,7 +7,8 @@ const data = [
         text: '403-818-4164',
         email: 'info@applify.com',
         address: {
-          street:'13 Deer Lane Road',
+          number: '',
+          street:'',
           city: 'Calgary, AB',
           postal: 'T2J 5S9'
         },
@@ -46,6 +47,10 @@ const data = [
       ]
     },
     sections: {
+      about: {
+        header: 'The wait is over...',
+        subHeader: 'Sites are launched within 72hrs.'
+      },
       contact: {
         firstCard: {
           header: "Let's talk.",
@@ -53,7 +58,7 @@ const data = [
         },
         secondCard: {
           header: "Questions?",
-          subHeader: "Check out our <a class='link' href='/'>FAQ's</a> or send us a message."
+          subHeader: "Check out our <a class='link' href='/'>FAQs</a> or send us a message."
         },
         thirdCard: {
           header: "We're here.",

@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin: 0.5em 1em;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+label {
+  display: none;
+}
+
+.button.submit {
+  margin: 0.5em 0.7em;
+}
+
+.submit svg {
+  width: 0.9em;
+  height: 0.9em;
+}
+
+/* Desktop Styles */
+@media (min-width: 875px) {
+  input,
+  textarea {
+    margin: 0.5em 2em;
+  }
+
+  .button.submit {
+    margin: 0.5em 1.4em;
+  }
+}
